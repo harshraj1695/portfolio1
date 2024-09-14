@@ -40,15 +40,15 @@ ScrollReveal({
     delay: 200,
 
 });
-ScrollReveal().reveal('.home-content, heading',{origin: 'top'});
-ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form',{origin: 'buttom'});
-ScrollReveal().reveal('.home-contact h1, .about-img',{origin: 'left'});
-ScrollReveal().reveal('.home-contact p , .about-content',{origin: 'right'});
+ScrollReveal().reveal('.home-content, heading',{origin: 'top', reset: true});
+ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form',{origin: 'buttom', reset: true});
+ScrollReveal().reveal('.home-contact h1, .about-img',{origin: 'left', reset: true});
+ScrollReveal().reveal('.home-contact p , .about-content',{origin: 'right', reset: true});
 
 
 //typed js
 const typed = new Typed('.mutiple-text',{
-    strings:['Fullstack Developer', 'DevOps Enthusiast '],
+    strings:['Fullstack Developer!', 'DevOps Enthusiast!'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay:1000,
