@@ -159,7 +159,8 @@ span{
     background: var(--snd-bg-color);
 }
 .about-img img{
-    width: 35vw;
+    width: 25vw;
+    border-radius: 18px;
 
 }
 .heading{
