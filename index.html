@@ -19,9 +19,9 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
-            <a href="#services">Services</a>
+            <a href="#services">Expertise</a>
             <a href="#portfolio">Projects</a>
-            <!-- <a href="#contact">Contact</a> -->
+            <a href="#contact">Contact</a>
         </nav>
      </header>
      <!-- home section -->
@@ -61,7 +61,7 @@
 
 <!-- services section -->
  <section class="services" id="services">
-<h2 class="heading">My <span>Services</span></h2>
+<h2 class="heading">My <span>Expertise</span></h2>
 
 <div class="services-container">
     <div class="services-box">
@@ -151,24 +151,25 @@
 
 
   <!-- contact design -->
-    <!-- <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+ <!-- contact design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Emali Address">
-            </div>
+    <form name="submit-to-google-sheet">
+        <div class="input-box">
+            <input name="fullname" type="text" placeholder="Full Name" required>
+            <input name="email" type="email" placeholder="Email Address" required>
+        </div>
 
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Emali Subject">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send-Message" class="btn">
+        <div class="input-box">
+            <input name="number" type="tel" placeholder="Mobile Number">
+            <input name="subject" type="text" placeholder="Email Subject" required>
+        </div>
+        <textarea name="Message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send-Message" class="btn">
+    </form>
+</section>
 
-        </form>
-    </section> -->
 
 
   <!-- footer design -->
@@ -181,6 +182,20 @@
     </div>
    </footer>
 
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbziEgjYTfmm9Kfhnx094-D6cXnsBrocBNjYstbZzkVOT6d8WPvVOza5y9GSjVmJ8iZ4gg/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+                alert('Success! Your message has been sent.');
+                form.reset(); // This will clear the form after submission
+            })       
+        .catch(error => alert('Error! Something went wrong.'));
+    });
+</script>
 
    <script src="https://unpkg.com/scrollreveal"></script>
    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
