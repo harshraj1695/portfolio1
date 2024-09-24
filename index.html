@@ -170,7 +170,11 @@
     </form>
 </section>
 
+    <!-- Loader -->
 
+<div class="loader">
+    <i class="fa-solid fa-spinner fa-spin fa-3x"></i> <!-- Spinner icon -->
+</div>
 
   <!-- footer design -->
    <footer class="footer">
@@ -185,15 +189,20 @@
    <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbziEgjYTfmm9Kfhnx094-D6cXnsBrocBNjYstbZzkVOT6d8WPvVOza5y9GSjVmJ8iZ4gg/exec';
     const form = document.forms['submit-to-google-sheet'];
+    const loader = document.querySelector('.loader');
 
     form.addEventListener('submit', e => {
         e.preventDefault();
+        loader.style.display = 'block'; // Show loader
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-                alert('Success! Your message has been sent.');
-                form.reset(); // This will clear the form after submission
-            })       
-        .catch(error => alert('Error! Something went wrong.'));
+            alert('Success! Your message has been sent.');
+            form.reset(); // Clear the form after submission
+        })
+        .catch(error => alert('Error! Something went wrong.'))
+        .finally(() => {
+            loader.style.display = 'none'; // Hide loader
+        });
     });
 </script>
 
