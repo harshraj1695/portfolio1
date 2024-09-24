@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a static portfolio website designed to showcase my professional skills, services, and projects. The site includes a variety of sections to present information in a clear and engaging manner. The contact page allows users to get in touch, though it is not connected to a backend.
+This is a static portfolio website designed to showcase my professional skills, services, and projects. The site includes a variety of sections to present information in a clear and engaging manner. The contact page allows users to get in touch, as it is connected with a google spreadsheet.
 
 ## Sections
 
@@ -36,10 +36,10 @@ The **Portfolio** section showcases my latest projects. Each project includes:
 
 ### Contact Me
 
-The **Contact Me** page provides a contact form for users to reach out. Although the form is not connected to a backend, it allows users to:
+The **Contact Me** page provides a contact form for users to reach out. The form is connected with a spreadsheet, it allows users to:
 - Enter their full name, email address, mobile number, and subject.
 - Write a message.
-- Submit the form (without backend functionality, submissions won't be processed).
+- Submit the form.
 
 ## Technologies Used
 
@@ -47,6 +47,7 @@ The **Contact Me** page provides a contact form for users to reach out. Although
 - CSS
 - JavaScript
 - Font Awesome (for icons)
+- Google Spreadsheet(for form data)
 
 ## Getting Started
 
