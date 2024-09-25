@@ -13,7 +13,9 @@
     --bg-color: #191f36;
     --snd-bg-color:#262B40;
     --text-color: #fff;
-    --main-color:  #59B2F4;
+    /* --main-color:  #59B2F4; */
+    --main-color:  #d70b0bce;
+
 }
 html{
     font-size: 62.5%;
