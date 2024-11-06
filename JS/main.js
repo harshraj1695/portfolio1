@@ -44,6 +44,7 @@ ScrollReveal().reveal('.home-content, heading',{origin: 'top', reset: true});
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form',{origin: 'buttom', reset: true});
 ScrollReveal().reveal('.home-contact h1, .about-img',{origin: 'left', reset: true});
 ScrollReveal().reveal('.home-contact p , .about-content',{origin: 'right', reset: true});
+ScrollReveal().reveal('.leetcode , .github-stats , .stats-card , .heading , .leetcode-card',{origin: 'left', reset: true});
 
 
 //typed js
