@@ -3,6 +3,7 @@
     --snd-bg-color: #262B40;
     --text-color: #fff;
     --main-color: #59B2F4;
+    --m-color:  #d70b0bce;
 }
 
 /* Basic Reset */
@@ -94,6 +95,12 @@ p {
     font-size: 1.2em;
     margin-bottom: 10px;
     color: var(--main-color);
+}
+.skill h4 i {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    /* color: inherit !important; */
+    color: var(--m-color) !important;
 }
 
 .progress {
