@@ -27,7 +27,7 @@ The **Services** section outlines the services I offer, including:
 - **Fullstack Development**: Using the MERN stack to create responsive front-end designs and scalable back-end systems.
 - **DevOps Tools**: Utilizing tools like Docker, Nginx, and Git for version control to streamline development and deployment processes.
 
-### New Section: My Stats
+### Stats
 
 The **My Stats** section provides a snapshot of my activity and contributions on platforms like **GitHub** and **LeetCode** where I actively engage in coding, development, and problem-solving.
 
@@ -50,8 +50,6 @@ On **LeetCode**, I solve coding problems and participate in contests to enhance 
 - **Contest Rank**: I participate in coding contests, ranking among other competitive coders.
 
 Check out my coding journey and problem-solving progress on [LeetCode](https://leetcode.com/harsh1695).
-
----
 
 
 ### Portfolio (Projects)
