@@ -21,11 +21,38 @@ The **About** section provides detailed information about my background, experie
 - An overview of my skills and what I aim to achieve in my career.
 - A button linking to a more detailed "about.html" page for further reading.
 
-### Services
+### Expertise
 
 The **Services** section outlines the services I offer, including:
 - **Fullstack Development**: Using the MERN stack to create responsive front-end designs and scalable back-end systems.
 - **DevOps Tools**: Utilizing tools like Docker, Nginx, and Git for version control to streamline development and deployment processes.
+
+### New Section: My Stats
+
+The **My Stats** section provides a snapshot of my activity and contributions on platforms like **GitHub** and **LeetCode** where I actively engage in coding, development, and problem-solving.
+
+#### GitHub Stats
+
+On **GitHub**, I contribute to various personal and open-source projects. Here's an overview of my activity:
+
+- **Repositories**: I have contributed to several repositories, both as part of individual projects and collaborations.
+- **Contributions**: Regular contributions to codebases, updates, and issues, showcasing my commitment to continuous learning and collaboration.
+- **Followers**: A growing number of followers who engage with and appreciate my work.
+
+Feel free to explore more of my work on [GitHub](https://github.com/harshraj1695).
+
+#### LeetCode Stats
+
+On **LeetCode**, I solve coding problems and participate in contests to enhance my skills in algorithms and data structures:
+
+- **Problems Solved**: I have solved a range of problems across various difficulty levels to strengthen my problem-solving abilities.
+- **Rating**: My rating reflects my consistent progress in coding challenges and contests.
+- **Contest Rank**: I participate in coding contests, ranking among other competitive coders.
+
+Check out my coding journey and problem-solving progress on [LeetCode](https://leetcode.com/harsh1695).
+
+---
+
 
 ### Portfolio (Projects)
 
