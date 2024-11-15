@@ -585,3 +585,22 @@ span{
         width: 100%;
     }
 }
+
+
+
+/* //footer */
+
+@media (max-width: 768px) {
+    .footer-text p {
+        font-size: 1rem; /* Smaller text for smaller screens */
+    }
+    .footer-iconTop a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-text p {
+        font-size: 0.9rem; /* Even smaller for very small screens */
+    }
+}
