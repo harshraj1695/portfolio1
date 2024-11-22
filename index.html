@@ -196,9 +196,11 @@
 
     <!-- Loader -->
 
-<div class="loader">
-    <i class="fa-solid fa-spinner fa-spin fa-3x"></i> <!-- Spinner icon -->
-</div>
+<!-- <div class="loader"> -->
+    <!-- <i class="fa-solid fa-spinner fa-spin fa-3x"></i> Spinner icon -->
+<!-- </div> -->
+<div class="loader"></div>
+
 
   <!-- footer design -->
   <footer class="footer">
@@ -222,8 +224,11 @@
         loader.style.display = 'block'; // Show loader
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
-            alert('Success! Your message has been sent.');
-            form.reset(); // Clear the form after submission
+            loader.style.display = 'none'; // Hide loader first
+            setTimeout(() => {
+                alert('Success! Your message has been sent.');
+                form.reset(); // Clear the form after submission
+            }, 100); // Add a slight delay before the alert
         })
         .catch(error => alert('Error! Something went wrong.'))
         .finally(() => {
